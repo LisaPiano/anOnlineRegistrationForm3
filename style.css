@@ -1,0 +1,200 @@
+/*======================================================================
+Base Element Styles
+=======================================================================*/
+
+body {
+    background-color: black; 
+    width: 100%; 
+    line-height: 1.6em; 
+    font-family: 'Merriweather', serif;
+    font-size: 20px; 
+}
+
+p, 
+label{
+    color: rgba(0, 0, 0, 0.5)
+}
+p{
+    text-align: left; 
+}
+.hr1 {
+    border: none; 
+    height: 4px; 
+    color: #333; 
+    background-color: #333; 
+}
+
+.hr2 {
+    border: none; 
+    height: 1px; 
+    color: #333; 
+    background-color: #333; 
+}
+/*======================================================================
+Top Section Styles
+=======================================================================*/
+.container {
+    box-sizing: border-box;
+    background-color: white; 
+    margin: 0 auto; 
+    width: 70%; 
+}
+
+.top {
+    text-align: center; 
+    margin: 0; 
+}
+
+.first-header {
+    background-color: rgb(105, 105, 105); 
+    text-transform: uppercase; 
+    width: 100%; 
+    padding-bottom: 40px;
+    margin: 0; 
+}
+
+h1 {
+    color: white; 
+    padding-top: 40px; 
+    margin: 0 auto; 
+    width: 100%;  
+}
+.third p {
+    text-align: center; 
+}
+
+
+
+/*======================================================================
+Contact Information Styles
+=======================================================================*/
+
+label {
+    display: block; 
+    margin-top: 5px; 
+    text-align: left; 
+}
+fieldset {
+    border: 0; 
+    text-align: left; 
+}
+legend {
+    font-size: 24px; 
+    text-align: left; 
+    font-weight: bold; 
+    padding-top: 40px; 
+}
+
+input {
+    margin-bottom: 25px; 
+    height: 44px; 
+    width: 95%; 
+    background-color: lightgrey; 
+    border: 0; 
+    border-radius: 7px 7px 7px 7px; 
+}
+
+
+/*======================================================================
+Newsletter Styles
+=======================================================================*/
+
+
+.newsletter-checkbox {
+    display: flex;
+    border: 3px solid red;
+  
+    
+}
+
+ul li {
+    display: flex; 
+    justify-content: flex-start; 
+    border: 3px solid blue; 
+    list-style-type: none; 
+}
+ul {
+    padding: 0; 
+}
+    
+    
+.checkbox {
+    width: 40px; 
+    margin-right: 40px; 
+}
+
+.checktext {
+   width: 100%; 
+   margin-top: 13px; 
+}
+
+
+
+
+/*======================================================================
+Newsletter Styles
+=======================================================================*/
+
+.newsletter-radio {
+    display: flex;
+    border: 3px solid red;
+}
+
+ul li{
+    display: flex; 
+    justify-content: flex-start; 
+    border: 3px solid blue; 
+    list-style-type: none; 
+}
+ul {
+    padding: 0; 
+}
+
+
+.radiocircle {
+    width: 40px; 
+    margin-right: 40px; 
+}
+
+.radiotext {
+   width: 100%; 
+   margin-top: 13px; 
+}
+
+/*======================================================================
+Newsletter Styles
+=======================================================================*/
+
+textarea {
+    height: 100px; 
+    width: 100%; 
+    background-color: rgba(105, 105, 105, 0.3); 
+    border-style: none; 
+    border-radius: 7px 7px 7px 7px; 
+}
+
+.button {
+    width: 100%; 
+    text-align: center; 
+    padding: 0; 
+    margin: 0; 
+  
+}
+.button-shape {
+    background-color: mediumblue;
+    text-align: center; 
+    width: 80%;
+    padding: 30px; 
+    color: white;
+    font-size: 30px; 
+    border-radius: 7px 7px 7px 7px; 
+}
+.buttontext {
+    color: white; 
+
+}
+
+
+.copy {
+    text-align: center; 
+}

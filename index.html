@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">   
+        <meta charset="UTF-8">
+        <title>An Online Registration Form-Project #3</title>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+    <div class="container">
+        
+        <div class="top">
+            <div class="first-header">
+                <h1>The Code Review</h1>
+            </div>
+        
+            <div class="second">
+                <h2>Signup for our newsletter</h2>
+            </div>
+
+            <div class="third">
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+            </div><hr class="hr1"><hr class="hr2">
+        </div>
+
+        
+        <form action="/my-non-existant-url-for-online-registration" action="post">
+            <div class="contact-information">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                          <label for="name">Full Name</label>
+                          <input type="text" id="name" name="user-name">
+                          <label for="email">Email Address</label>
+                          <input type="email" id="email" name="user-email">
+                          <label for="phone">Phone Number</label>
+                          <input type="tel" id="phone" name="user-phone"></input>
+                          <label for="address">Street Address</label>
+                          <input type="text" id="address" name="user-address"></input>
+                          <label for="city">City</label>
+                          <input type="text" id="city" name="user-city"></input>
+                          <label for="state">State</label>
+                          <input type="text" id="state" name="user-state"></input>
+                          <label for="zip">Zip Code</label>
+                          <input type="text" id="zip" name="user-zipcode"></input>
+                </fieldset>
+            </div><hr class="hr2">
+
+            <div class="newsletter-checkbox">
+                <fieldset>
+                    <legend>Newsletter</legend>
+                    <p class="select">Select the newsletters you would like to receive</p>
+                    <div class="checkbox-section">
+                        <ul>
+                            <li>
+                                <input class="checkbox" type="checkbox" id="newsletters1"name="HTML" value="HTML">
+                                <label for="newletters1" class="checktext">HTML News</label>
+                            </li>
+                            <li>
+                                <input class="checkbox" type="checkbox" id="newsletters2"name="" value="CSS">
+                                <label for="newletters2" class="checktext">CSS News</label>
+                            </li>
+                            <li>
+                                <input class="checkbox" type="checkbox" id="newsletters3"name="" value="Javascript">
+                                <label for="newletters3" class="checktext">Javascript News</label>
+                            </li>
+                            </ul>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="newsletter-radio">
+                <fieldset>
+                    <p>Newsletter format</p>
+                    <ul>
+                        <li>
+                            <label for="format1" class="radiotext">HTML</label>
+                            <input type="radio" id="format1" class="radiocircle" name="format" value="html">
+                        </li>
+                        <li>
+                            <label for="format2" class="radiotext">Plain text</label>
+                            <input type="radio" id="format2" class="radiocircle"name="format" value="plaintext">
+                        </li>
+                        </ul>
+                </fieldset>
+            </div>
+
+            <div class="textarea">
+                <fieldset>
+                    <label for="other-topics" class="textareatext">Other topics you'd like to hear about</label>
+                    <textarea id="other-topics" name="other-topics"></textarea>
+                </fieldset>
+            </div>
+
+            <div class="button">
+                <fieldset class="button">
+                    <label for="button" class="buttontext"></label>
+                    <button type="submit" class="button-shape">Sign Up</button>
+                </fieldset>
+            </div>
+        </form>
+
+
+        <footer>
+            <p class="copy"><em>Copyright The Code Review</em></p>
+        </footer>
+    
+
+    </div>  
+    </body>
+
+</html>
