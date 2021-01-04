@@ -30,6 +30,8 @@ p{
     color: #333; 
     background-color: #333; 
 }
+
+
 /*======================================================================
 Top Section Styles
 =======================================================================*/
@@ -37,7 +39,8 @@ Top Section Styles
     box-sizing: border-box;
     background-color: white; 
     margin: 0 auto; 
-    width: 70%; 
+    width: 90%; 
+    padding: 10px; 
 }
 
 .top {
@@ -71,8 +74,14 @@ Contact Information Styles
 
 label {
     display: block; 
+    width: 100%;
     margin-top: 5px; 
     text-align: left; 
+}
+
+.change {
+    text-align: left; 
+    width: 100%;
 }
 fieldset {
     border: 0; 
@@ -85,13 +94,31 @@ legend {
     padding-top: 40px; 
 }
 
-input {
+#name,
+#email,
+#phone,
+#address,
+#city,
+#zip {
+    padding-left: 20px; 
+}
+
+input, 
+#states {
     margin-bottom: 25px; 
     height: 44px; 
     width: 95%; 
     background-color: lightgrey; 
     border: 0; 
     border-radius: 7px 7px 7px 7px; 
+}
+
+#states {
+    color: darkslategray; 
+}
+
+#zip {
+    width: 200px; 
 }
 
 
@@ -102,20 +129,13 @@ Newsletter Styles
 
 .newsletter-checkbox {
     display: flex;
-    border: 3px solid red;
+    
   
     
 }
 
-ul li {
-    display: flex; 
-    justify-content: flex-start; 
-    border: 3px solid blue; 
-    list-style-type: none; 
-}
-ul {
-    padding: 0; 
-}
+
+
     
     
 .checkbox {
@@ -132,28 +152,33 @@ ul {
 
 
 /*======================================================================
-Newsletter Styles
+Radio Styles
 =======================================================================*/
 
 .newsletter-radio {
     display: flex;
-    border: 3px solid red;
 }
 
 ul li{
     display: flex; 
     justify-content: flex-start; 
-    border: 3px solid blue; 
+
     list-style-type: none; 
+    width: 100%; 
 }
 ul {
-    padding: 0; 
-}
+    padding: 0;
+    width: 350px;
+    margin-top: 20px; 
+    width: 100%;
+    }
+
 
 
 .radiocircle {
     width: 40px; 
     margin-right: 40px; 
+    order: -1;
 }
 
 .radiotext {
@@ -162,11 +187,11 @@ ul {
 }
 
 /*======================================================================
-Newsletter Styles
+Textarea, button and footer styles
 =======================================================================*/
 
 textarea {
-    height: 100px; 
+    height: 150px; 
     width: 100%; 
     background-color: rgba(105, 105, 105, 0.3); 
     border-style: none; 
@@ -197,4 +222,105 @@ textarea {
 
 .copy {
     text-align: center; 
+}
+footer {
+    padding-bottom: 100px; 
+}
+
+/*======================================================================
+Pseudo class, pseudo elements, transform and transition Styles
+=======================================================================*/
+
+:focus {
+    background-color: rgb(231, 255, 122); 
+}
+
+::placeholder {
+    padding: 40px; 
+    font-style: italic; 
+}
+
+label:hover {
+    background-color: lightpink; 
+    font-size: 40px; 
+    line-height: 2em; 
+}
+h1,
+{
+    font-size:  50px; 
+    transition: font-size 1s; 
+}
+h1:hover {
+    font-size: 60px; 
+    color: purple ; 
+    line-height: 2em; 
+}
+.second:hover {
+    transform: rotate(180deg); 
+}
+
+legend:hover {
+    transform: scale(1.4);
+}
+
+
+/*======================================================================
+Media Query Styles
+=======================================================================*/
+
+@media(min-width: 768px){
+
+body {
+    background-color: tomato;
+}
+
+.container {
+    width: 70%; 
+    background-color: lightyellow;
+}
+
+
+.contact-list {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: ; 
+
+}
+
+ul li {
+    width: 50%; 
+    padding: 0; 
+}
+.changetext {
+    width: 450px; 
+    margin-top: 10px; 
+    
+
+}
+.changeinp, 
+#states {
+    width: 600px; 
+    height: 70px; 
+    margin-top: 10px; 
+    padding: 0; 
+}
+
+
+.radiocircle {
+    width: 120px; 
+    margin-right: 0px; 
+}
+
+h1,
+{
+    font-size:  50px; 
+    transition: font-size 1s; 
+}
+h1:hover {
+    font-size: 80px; 
+    color: red; 
+}
+.second:hover {
+    transform: rotate(180deg); 
+}
 }
