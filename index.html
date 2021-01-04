@@ -27,7 +27,7 @@
         </div>
 
         
-        <form action="/my-non-existant-url-for-online-registration" action="post">
+        <form action="/my-non-existant-url-for-online-registration">
             <div class="contact-information">
                 <fieldset>
                     <legend>Contact Information</legend>
@@ -37,11 +37,11 @@
                             <li><label for="email" class="changetext">Email Address</label></li>
                             <li><input required type="email" class="changeinp" id="email" name="user-email" placeholder="Required"></li> 
                             <li><label for="phone" class="changetext">Phone Number</label></li> 
-                            <li><input type="tel" class="changeinp" id="phone" name="user-phone" placeholder="Optional"></input></li> 
-                            <li><label for="address" class="changetext">Street Address</labeplaceholder="Optional"l></li> 
-                            <li><input required type="text" class="changeinp" id="address" name="user-address" placeholder="Required"></input></li>
+                            <li><input type="tel" class="changeinp" id="phone" name="user-phone" placeholder="Optional"></li> 
+                            <li><label for="address" class="changetext">Street Address></label></li> 
+                            <li><input required type="text" class="changeinp" id="address" name="user-address" placeholder="Required"></li>
                             <li><label for="city" class="changetext">City</label></li>
-                            <li><input required type="text" class="changeinp" id="city" name="user-city" placeholder="Required"></input></li>
+                            <li><input required type="text" class="changeinp" id="city" name="user-city" placeholder="Required"></li>
                             <li><label for="states" class="changetxt">State</label></li> 
                             <li><select name="states" id="states" class="changeinp">
                                     <option value="Choose State">Choose State</option>
@@ -99,7 +99,7 @@
                                 </select></li> 
                             
                             <li><label for="zip" class="changetext" >Zip Code</label></li> 
-                            <li><input required type="text" class="changeinp" id="zip" name="user-zipcode" placeholder="Required"></input></li>
+                            <li><input required type="text" class="changeinp" id="zip" name="user-zipcode" placeholder="Required"></li>
                         </ul>
                 </fieldset>
             </div><hr class="hr2">
@@ -111,16 +111,16 @@
                     <div class="checkbox-section">
                         <ul>
                             <li>
-                                <input class="checkbox" type="checkbox" id="newsletters1" name="checkbox value="HTML">
-                                <label for="newletters1" class="checktext">HTML News</label>
+                                <input class="checkbox" type="checkbox" id="newsletters1" name="checkbox" value="HTML">
+                                <label for="newsletters1" class="checktext">HTML News</label>
                             </li>
                             <li>
                                 <input class="checkbox" type="checkbox" id="newsletters2" name="checkbox" value="CSS">
-                                <label for="newletters2" class="checktext">CSS News</label>
+                                <label for="newsletters2" class="checktext">CSS News</label>
                             </li>
                             <li>
                                 <input class="checkbox" type="checkbox" id="newsletters3" name="checkbox" value="Javascript">
-                                <label for="newletters3" class="checktext">Javascript News</label>
+                                <label for="newsletters3" class="checktext">Javascript News</label>
                             </li>
                             </ul>
                     </div>
@@ -145,15 +145,15 @@
 
             <div class="textarea">
                 <fieldset>
-                    <label for="other-topics" class="textareatext" name="textarea">Other topics you'd like to hear about</label>
+                    <label for="other-topics" class="textareatext">Other topics you'd like to hear about</label>
                     <textarea id="other-topics" name="other-topics"></textarea>
                 </fieldset>
             </div>
 
             <div class="button">
                 <fieldset class="button">
-                    <label for="button" class="buttontext" name="button"></label>
-                    <button type="submit" class="button-shape">Sign Up</button>
+                    <label for="button" class="buttontext"></label>
+                    <button type="submit" id="button" class="button-shape">Sign Up</button>
                 </fieldset>
             </div>
         </form>

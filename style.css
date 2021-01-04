@@ -23,14 +23,14 @@ p {
     border: none; 
     height: 4px; 
     color: #333; 
-    background-color: #333; 
+    background-color: #332; 
 }
 
 .hr2 {
     border: none; 
     height: 1px; 
     color: #333; 
-    background-color: #333; 
+    background-color: #332; 
 }
 
 /*======================================================================
@@ -242,7 +242,7 @@ label:hover {
     transition-duration: 2s; 
 }
 
-h1,
+h1
 {
     font-size:  50px; 
     transition: font-size 1s; 
@@ -288,8 +288,7 @@ body {
 
 .contact-list {
     display: flex; 
-    flex-wrap: wrap; 
-    justify-content: ; 
+    flex-wrap: wrap;
 }
 
 ul li {
@@ -316,7 +315,7 @@ ul li {
     width: 460px; 
 }
 
-h1,
+h1
 {
     font-size:  50px; 
     transition: font-size 1s; 
