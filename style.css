@@ -14,9 +14,11 @@ p,
 label{
     color: rgba(0, 0, 0, 0.5)
 }
-p{
+
+p {
     text-align: left; 
 }
+
 .hr1 {
     border: none; 
     height: 4px; 
@@ -31,10 +33,10 @@ p{
     background-color: #333; 
 }
 
-
 /*======================================================================
 Top Section Styles
 =======================================================================*/
+
 .container {
     box-sizing: border-box;
     background-color: white; 
@@ -62,11 +64,10 @@ h1 {
     margin: 0 auto; 
     width: 100%;  
 }
+
 .third p {
     text-align: center; 
 }
-
-
 
 /*======================================================================
 Contact Information Styles
@@ -83,15 +84,18 @@ label {
     text-align: left; 
     width: 100%;
 }
+
 fieldset {
     border: 0; 
     text-align: left; 
 }
+
 legend {
     font-size: 24px; 
     text-align: left; 
     font-weight: bold; 
     padding-top: 40px; 
+    padding-left: 30px; 
 }
 
 #name,
@@ -106,6 +110,7 @@ legend {
 input, 
 #states {
     margin-bottom: 25px; 
+    padding-right: 0px; 
     height: 44px; 
     width: 95%; 
     background-color: lightgrey; 
@@ -121,23 +126,14 @@ input,
     width: 200px; 
 }
 
-
 /*======================================================================
 Newsletter Styles
 =======================================================================*/
 
 
 .newsletter-checkbox {
-    display: flex;
-    
-  
-    
-}
-
-
-
-    
-    
+    display: flex;  
+}    
 .checkbox {
     width: 40px; 
     margin-right: 40px; 
@@ -147,9 +143,6 @@ Newsletter Styles
    width: 100%; 
    margin-top: 13px; 
 }
-
-
-
 
 /*======================================================================
 Radio Styles
@@ -162,10 +155,10 @@ Radio Styles
 ul li{
     display: flex; 
     justify-content: flex-start; 
-
     list-style-type: none; 
     width: 100%; 
 }
+
 ul {
     padding: 0;
     width: 350px;
@@ -173,10 +166,8 @@ ul {
     width: 100%;
     }
 
-
-
 .radiocircle {
-    width: 40px; 
+    flex-basis: 40%; 
     margin-right: 40px; 
     order: -1;
 }
@@ -203,8 +194,8 @@ textarea {
     text-align: center; 
     padding: 0; 
     margin: 0; 
-  
 }
+
 .button-shape {
     background-color: mediumblue;
     text-align: center; 
@@ -214,15 +205,15 @@ textarea {
     font-size: 30px; 
     border-radius: 7px 7px 7px 7px; 
 }
+
 .buttontext {
     color: white; 
-
 }
-
 
 .copy {
     text-align: center; 
 }
+
 footer {
     padding-bottom: 100px; 
 }
@@ -235,6 +226,10 @@ Pseudo class, pseudo elements, transform and transition Styles
     background-color: rgb(231, 255, 122); 
 }
 
+button:hover {
+    outline: 3px dashed red; 
+}
+
 ::placeholder {
     padding: 40px; 
     font-style: italic; 
@@ -244,23 +239,35 @@ label:hover {
     background-color: lightpink; 
     font-size: 40px; 
     line-height: 2em; 
+    transition-duration: 2s; 
 }
+
 h1,
 {
     font-size:  50px; 
     transition: font-size 1s; 
 }
+
 h1:hover {
     font-size: 60px; 
     color: purple ; 
     line-height: 2em; 
 }
+
 .second:hover {
     transform: rotate(180deg); 
 }
 
 legend:hover {
     transform: scale(1.4);
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+input:invalid {
+    border: 1px solid red; 
 }
 
 
@@ -279,24 +286,22 @@ body {
     background-color: lightyellow;
 }
 
-
 .contact-list {
     display: flex; 
     flex-wrap: wrap; 
     justify-content: ; 
-
 }
 
 ul li {
-    width: 50%; 
+    width: 40%; 
     padding: 0; 
 }
+
 .changetext {
     width: 450px; 
     margin-top: 10px; 
-    
-
 }
+
 .changeinp, 
 #states {
     width: 600px; 
@@ -305,10 +310,10 @@ ul li {
     padding: 0; 
 }
 
-
 .radiocircle {
-    width: 120px; 
-    margin-right: 0px; 
+    margin-right: 20px; 
+    flex-basis: 60%; 
+    width: 460px; 
 }
 
 h1,
@@ -316,10 +321,12 @@ h1,
     font-size:  50px; 
     transition: font-size 1s; 
 }
+
 h1:hover {
     font-size: 80px; 
     color: red; 
 }
+
 .second:hover {
     transform: rotate(180deg); 
 }
