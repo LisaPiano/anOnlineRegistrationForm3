@@ -306,7 +306,6 @@ label {
 
 .contact {
     display: flex;
-    flex-wrap: wrap; 
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
@@ -326,10 +325,8 @@ label {
 }
 
 #states {
-    flex-basis: 68%; 
-    margin-left: 31%; 
+    flex-basis: 68.5%; 
     align-self: flex-start; 
-    width: 40%;
 }
 
 #zip {
